@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Actividad 10</title>
+    </head>
+    <body>
+        <form action="Resultado.php" method="post">
+            <fieldset style="width: 400px;">
+                <legend>Solicitud de Ingreso a Universidad</legend>
+                <label>Nombre(s)
+                    <input type="text" name="Nom" required>
+                </label>
+                <br><br>
+
+                <label>Apellido Paterno:
+                    <input type="text" name="ApP" required>
+                </label>
+                <br><br>
+
+                <label>Apellido Materno:
+                    <input type="text" name="ApM" required>
+                </label>
+                <br><br>
+
+                <label>Edad:
+                    <input type="number" name=edad min="18" max="50" required>
+                </label><br><br>
+
+                <label>Correo electrónico:
+                    <input type="email" name="email" required>
+                </label>
+                <br><br>
+
+                <label>Sexo: 
+                    <select name="sexo">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                    </select>
+                </label>
+                <br><br>
+
+                <label>Teléfono (ejemplo: 55 1234 567):
+                    <input type="tel" name="tel" pattern="[0-9]{2} [0-9]{4} [0-9]{4}">
+                </label>
+                <br><br>
+
+                <label>Celular (ejemplo: 55 1234 567):
+                    <input type="tel" name="cel" pattern="[0-9]{2} [0-9]{4} [0-9]{4}">
+                </label>
+                <br><br>
+
+                <label>Escuala de procedencia
+                    <input type="text" name="procedencia" required>
+                </label>
+                <br><br>
+
+                <label>Promedio: 
+                    <select name="promedio">
+                        <option value="10">10</option>
+                        <option value="9">9</option>
+                        <option value="8">8</option>
+                        <option value="7">7</option>
+                        <option value="6">6</option>
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </label>
+                <br><br>
+
+                <label>Primera Opción:
+                    <input type="text" name="op1" required>
+                </label>
+                <br><br>
+
+                <label>Segunda Opción:
+                    <input type="text" name="op2" required>
+                </label>
+                <br><br>
+
+                <input type="submit" name="Enviar" value="Enviar">
+                <input type="submit" name="Limpiar" value="Limpiar">
+
+            </fieldset>
+        </form>
+    </body>
+</html>
