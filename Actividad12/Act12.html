@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Actividad 12</title>
+    </head>
+    <body>
+        <form action="Act12.php" method="post">
+            <fieldset style="width: 500px">
+                <legend><strong><u>Traductor de lenguaje morse</u></strong></legend>
+                    <br>
+                    <p><strong>Seleccione como desea traducir:</strong></p>
+                    <label>Del Español al Morse
+                        <input type="radio" name="tipo" value="a">
+                    </label>
+                    <br>
+                    <label>Del Morse al Español
+                        <input type="radio" name="tipo" value="b">
+                    </label>
+                    <br><br>
+
+                    <label><strong>Inserte el texto:</strong>
+                        <br>
+                        <textarea name="texto" rows="15" cols="40" required></textarea>
+                    </label>
+                    <br><br>
+    
+                    <input type="Submit" name="Traducir" value="Traducir">
+                    <input type="Reset" name="Limpiar" value="Limpiar">
+            </fieldset>
+        </form>
+    </body>
+</html>
