@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Actividad 15</title>
+    </head>
+    <body>
+        <form action="./act15.php" method="post" enctype="multipart/form-data">
+            <fieldset style="width: 500px">
+                <legend><strong><u>Registro de Nueva Obra</u></strong></legend>
+                    <label>Ingrese el nombre de la obra:
+                        <input type="text" name="nobra" required>
+                    </label>
+                    <br><br>
+                    <label>Ingrese el nombre del autor:
+                        <input type="text" name="nautor">
+                    </label>
+                    <br><br>
+                    <label>Ingrese año(s) de creación:
+                        <input type="number" name="año">
+                    </label>
+                    <br><br>
+                    Ingrese su archivo: <input type="file" name="archivo" accept="image/jpg, image/jpeg, image/png" required>
+                    <br><br>
+    
+                    <input type="submit" name="Subir obra" value="Subir obra">
+                    <input type="Reset" name="Limpiar" value="Limpiar">
+            </fieldset>
+        </form>
+    </body>
+</html>
